@@ -35,8 +35,11 @@ source .venv/bin/activate  # Windows: .venv\Scripts\activate
 Откройте терминал/PowerShell в папке проекта и выполните:
 
 ```bash
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 ```
+
+> 💡 **Windows:** если команда всё равно не находится, попробуйте `py -m pip install -r requirements.txt`. Это гарантированно
+> запустит «pip» из только что установленного Python, даже если системный `PATH` ещё не обновился.
 
 Python скачает и установит нужные библиотеки (HTTP-клиент, парсер HTML и т.д.). Делается один раз.
 
